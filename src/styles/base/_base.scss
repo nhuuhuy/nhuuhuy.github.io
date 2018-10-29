@@ -1,0 +1,11 @@
+html{
+    font-size: 10px;
+    @include mq(tablet, max){
+        font-size: 8px;
+    }
+}
+body{
+    background-color: $primary-color;
+    font-family: Roboto;
+    color: $white-color;
+}

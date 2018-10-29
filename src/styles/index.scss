@@ -1,0 +1,31 @@
+//helpers
+@import "helpers/variables";
+@import "helpers/mixin";
+//base
+@import "base/normalize";
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+
+// component
+@import "component/slider";
+@import "component/box";
+@import "component/heading";
+@import "component/button";
+@import "component/form";
+
+
+// Layout
+@import "layout/about";
+@import "layout/skill";
+@import "layout/project";
+@import "layout/edu";
+@import "layout/exp";
+@import "layout/contact";
+
+
+
+
+
+

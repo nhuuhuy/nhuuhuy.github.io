@@ -1,0 +1,63 @@
+.experience{
+    .heading{
+        text-align: center;
+    }
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 40px 0;
+        height: 100%;
+        margin: 20px 0;
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            // background: #0f1d4b;
+            height: 100%;
+            width: 70%;
+            right: 0;
+            top:0
+        }
+    }
+    &-year{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+        font-size: 1.8rem;
+        margin:  15px;
+        @include mq(desktop, min){
+        text-align: right;   
+        }
+        b{
+            display: block;
+            margin-right: -20px;
+            font-size: 9rem;
+            color: #232a59;
+            line-height: 6rem;
+            font-weight: 900;
+        }
+    }
+    &-company{
+        margin-left: 15px;
+        @include mq(desktop,min){
+        max-width: 50%;
+        }
+        p{
+            font-size: 2rem;
+            margin: 0;
+            line-height: 1.7rem;
+        }
+        h4{
+            font-size: 2.6rem;
+            font-weight: bold
+        }
+        ul{
+            font-size: 12px;
+            li{
+                list-style: initial;
+                margin-left: 20px
+            }
+        }
+    }
+}

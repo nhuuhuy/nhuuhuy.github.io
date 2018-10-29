@@ -1,0 +1,61 @@
+/*----------------MIXIN-------------------*/
+
+@mixin model($padd, $mar) {
+    padding: $padd;
+    margin: $mar;
+}
+@mixin size($width, $height) {
+    width: $width;
+    height: $height
+}
+@mixin flex($just, $align, $direct, $wrap) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $direct;
+    flex-wrap: $wrap;
+}
+@mixin posi-top-left($posi, $top, $left) {
+    position: $posi;
+    top: $top;
+    left: $left;
+}
+
+@mixin posi-top-right($posi, $top, $right) {
+    position: $posi;
+    top: $top;
+    right: $right;
+}
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin line($bottom, $left, $top, $right, $width, $height, $background) {
+        position: absolute;
+        bottom: $bottom;
+        left:  $left;
+        top: $top;
+        right:  $right;
+        width:  $width;
+        height:  $height;
+        background:  $background;
+}

@@ -1,0 +1,15 @@
+.heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 7rem;
+    &-order {
+        font-size: 10rem;
+        font-weight: bolder;
+        i {
+            font-size: 2rem;
+            margin-left: -2rem;
+            color: $secondary-color
+        }
+    }
+}

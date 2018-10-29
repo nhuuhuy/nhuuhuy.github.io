@@ -1,0 +1,52 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.109",
+    "animate": "^1.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "exports-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "font-awesome": "^4.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "jquery": "^3.3.1",
+    "jquery-validation": "^1.17.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.0",
+    "owl-carousel": "^1.0.0",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.3",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^2.3.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.23.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-provide-global-plugin": "0.0.1"
+  },
+  "dependencies": {
+    "three": "^0.97.0"
+  }
+}

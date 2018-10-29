@@ -1,0 +1,13 @@
+.contact{
+    padding: 8rem 2rem;
+    &-form{
+        padding: 2rem;
+    }
+    #map{
+        height:300px;
+        @include mq(desktop){
+        height: 100%;
+        }
+    }
+
+}

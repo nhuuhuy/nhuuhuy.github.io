@@ -1,0 +1,27 @@
+$width:20rem;
+$height:30rem;
+$thick: 20px;
+.box{
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    width: $width;
+    height: $height;
+    z-index: -1;
+    .box-line-1{
+        @include line(100%,0,0,0,$width,$thick,$secondary-color);
+
+    }
+    .box-line-2{
+        @include line(100%,0,0,0,$thick,$height,$secondary-color);
+    
+    }
+    .box-line-3{
+        @include line(0,0,100%,0,$width,$thick,$secondary-color);
+     
+    }
+    .box-line-4{
+        @include line(0,initial,0,0,$thick,$height,$secondary-color);
+       
+    }
+}
