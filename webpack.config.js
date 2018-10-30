@@ -24,7 +24,7 @@ module.exports = {
     port: 9000
   },
 
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -102,7 +102,7 @@ module.exports = {
     // new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       filename: 'index.html', template: './src/index.html', title: 'Nguyen Huu Huy',
-      // favicon: './src/assets/images/logo.png',
+      favicon: './src/assets/images/fav.ico/favicon-16x16.png',
       chunks: ['index'],
       minify: {
         collapseWhitespace: false //bo khoang trong
